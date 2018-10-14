@@ -14,7 +14,7 @@
 
 
 # Number of land use change scenario
-	nluc <- length(Lu)   	
+	nluc <- length(hru_landuse)   	
 
 # Read HRUs information for each LU
 	hru <- list()		
