@@ -91,7 +91,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .chm in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -117,6 +117,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.chm#
 
 #-------------------------------------------------------------------.gw#
@@ -131,7 +132,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .gw in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -155,6 +156,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.gw#
 
 #-------------------------------------------------------------------.sol#
@@ -169,7 +171,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .sol in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -193,6 +195,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.sol#
 
 #-------------------------------------------------------------------.sep#
@@ -207,7 +210,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .sep in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -231,6 +234,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.sep#
 
 #-------------------------------------------------------------------.sdr#
@@ -245,7 +249,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .sdr in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -269,6 +273,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.sdr#
 
 #-------------------------------------------------------------------.mgt#
@@ -283,7 +288,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .mgt in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -307,6 +312,7 @@ hru_general <- function(sub, hru){
 		}
 	}
 	}
+	}
 #-------------------------------------------------------------------.mgt#
 
 #-------------------------------------------------------------------.hru#
@@ -321,7 +327,7 @@ hru_general <- function(sub, hru){
 	nhrus_updated <- sum(nluc_all$SUBBASIN[nluc_all$SUBBASIN == sub])/sub
 
 	#Find the new .hru in which folder
-	
+	if (nhrus_updated >= nhrus) {
 	for (i in nhrus:nhrus_updated){
 		k <- 0
 		for (j in 1:length(Lu)){
@@ -348,6 +354,7 @@ hru_general <- function(sub, hru){
 				k = k + 1
 			}
 		}
+	}
 	}
 	}
 #-------------------------------------------------------------------.hru#
