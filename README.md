@@ -1,2 +1,2 @@
 # SWAT_LUC
-Please find more description in the User manual
+For simulation of dynamic land use change with SWAT, this R script will create all necessary files for you. Please find more description in the User manual
