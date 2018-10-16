@@ -445,12 +445,12 @@ hru_general <- function(sub, hru){
 		if (inter_date[[ii-1]][1] != "NA") {
 			for (jj in 1:length(inter_date[[ii-1]])){
 				counter = counter + 1
-				read_lup[counter] <- paste(dm(counter), dm(as.numeric(substr(inter_date[[ii-1]][jj], 1, 2))), dm(as.numeric(substr(inter_date[[ii-1]][jj], 3, 4))), " ", dm(as.numeric(substr(inter_date[[ii-1]][jj], 5, 8))), "  ", inter_date[[ii-1]][jj], ".dat", sep = "")
-			}			
+                		read_lup[counter] <- paste(dm(counter), dm(as.numeric(substr(inter_date[[ii-1]][jj], 1, 2))), dm(as.numeric(substr(inter_date[[ii-1]][jj], 3, 4))), " ", as.numeric(substr(inter_date[[ii-1]][jj], 5, 8)), " ", inter_date[[ii-1]][jj], ".dat", sep = "")
+            		}			
 		}
 		counter = counter + 1
-		read_lup[counter] <- paste(dm(counter), dm(as.numeric(substr(date[ii], 1, 2))), dm(as.numeric(substr(date[ii], 3, 4))), " ", dm(as.numeric(substr(date[ii], 5, 8))), "  ", paste(date[ii],".dat", sep =""), sep = "")
-	}
+        	read_lup[counter] <- paste(dm(counter), dm(as.numeric(substr(date[ii], 1, 2))), dm(as.numeric(substr(date[ii], 3, 4))), " ", as.numeric(substr(date[ii], 5, 8)), " ", paste(date[ii],".dat", sep =""), sep = "")
+    	}
 
 	writeLines(read_lup,"lup.dat")
 
